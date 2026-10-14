@@ -1,6 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
+import authReducer from "../authSlice";
 
-// The central database for our app. 
 export const store = configureStore({
-  reducer: {}
+  reducer: {
+    auth: authReducer,
+  },
 });
