@@ -8,7 +8,7 @@ function Register() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  // Handle input changes using spread operator (Lecture Slide 58)
+  // Handle input changes using spread operator 
   function handleChange(e) {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
