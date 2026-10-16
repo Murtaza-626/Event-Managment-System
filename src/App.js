@@ -18,6 +18,7 @@ function App(){
         <Router path="/register" element={<Register/>}/>
         <Router path="/events" element={<Events/>}/>
         <Router path="/my-events" element={<MyEvents/>}/>
+        <Route path="/events/:id" element={<EventDetails />} />
       </Routes>
     </div>
     </BrowserRouter>
