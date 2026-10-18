@@ -18,7 +18,7 @@ function EventDetails() {
   useEffect(() => {
     const fetchEventDetails = async () => {
     //   const apiKey = process.env.REACT_APP_TICKETMASTER_API_KEY; 
-    const apiKey = "lZkfSItr1JSOLkqFjbZmAwybIlXhyl6l"
+    const apiKey = process.env.REACT_APP_TICKETMASTER_API_KEY
       const url = `https://app.ticketmaster.com/discovery/v2/events/${id}.json?apikey=${apiKey}`;
       
       try {
