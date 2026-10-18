@@ -19,7 +19,7 @@ function Events() {
       dispatch(setLoading(true));
       
     //   const apiKey = process.env.REACT_APP_TICKETMASTER_API_KEY;
-    const apiKey = "lZkfSItr1JSOLkqFjbZmAwybIlXhyl6l"
+    const apiKey = process.env.REACT_APP_TICKETMASTER_API_KEY
       // Building API URL with filters
       let url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${apiKey}`;
       if (keyword) url += `&keyword=${keyword}`;
