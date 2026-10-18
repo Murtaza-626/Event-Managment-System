@@ -14,17 +14,17 @@ function Navbar() {
 
   return (
     <nav style={{ padding: "10px", background: "lightblue", marginBottom: "20px" }}>
-      <Link to="/">Home</Link>
-      <Link to="/events">Events</Link>
-      <Link to="/my-events">My Events</Link>
+    <Link to="/" style={{ marginRight: "15px" }}>Home</Link>
+    <Link to="/events" style={{ marginRight: "15px" }}>Events</Link>
+    <Link to="/my-events" style={{ marginRight: "15px" }}>My Events</Link>
       {user ? (
         <span style={{ float: "right" }}>
           Hello, {user.name} <button onClick={handleLogout}>Logout</button>
         </span>
       ) : (
         <span style={{ float: "right" }}>
-          <Link to="/login">Login</Link> 
-          <Link to="/register">Register</Link>
+          <Link to="/login" style={{ marginRight: "15px" }}>Login</Link> 
+          <Link to="/register" style={{ marginRight: "15px" }}>Register</Link>
         </span>
       )}
     </nav>

@@ -35,7 +35,7 @@ form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  background: White; /* Kept human-readable name */
+  background: White; 
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -44,13 +44,13 @@ form {
 input, select {
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid Silver; /* Replaced #ccc */
+  border: 1px solid Silver; 
   border-radius: 4px;
 }
 
 button {
   padding: 10px 15px;
-  background-color: DodgerBlue; /* Replaced #007bff (a very vibrant, clean modern blue) */
+  background-color: DodgerBlue; 
   color: White; /* Kept human-readable name */
   border: none;
   border-radius: 4px;
@@ -58,5 +58,68 @@ button {
 }
 
 button:hover {
-  background-color: RoyalBlue; /* Replaced #0056b3 (a perfect darker blue match for hover states) */
+  background-color: RoyalBlue; 
+}
+
+/* Home Page */
+.home {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.home-hero {
+  background: DodgerBlue;
+  color: White;
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.home-hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 36px;
+}
+
+.home-hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: White;
+  color: DodgerBlue;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.home-btn:hover {
+  background: WhiteSmoke;
+}
+
+/* Feature cards */
+.home-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.home-card {
+  background: White;
+  border: 1px solid LightGray;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 280px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
 }

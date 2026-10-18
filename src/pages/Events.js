@@ -18,7 +18,8 @@ function Events() {
     const fetchEvents = async () => {
       dispatch(setLoading(true));
       
-      const apiKey = process.env.TICKETMASTER_API_KEY;
+      const apiKey = process.env.REACT_APP_TICKETMASTER_API_KEY;
+    // const apiKey = "lZkfSItr1JSOLkqFjbZmAwybIlXhyl6l"
       // Building API URL with filters
       let url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${apiKey}`;
       if (keyword) url += `&keyword=${keyword}`;
@@ -52,7 +53,7 @@ function Events() {
     <div>
       <h2>Explore Events</h2>
       
-      // Search & Filter Form 
+      {/*Search & Filter Form */}
       <div style={{ marginBottom: "20px" }}>
         <input 
           type="text" 
@@ -69,7 +70,7 @@ function Events() {
         </select>
       </div>
 
-      // Rendering Events List 
+      {/* Rendering Events List */} 
       {loading ? (
         <p>Loading events.....</p>
       ) : (
