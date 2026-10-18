@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+/* General App Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: WhiteSmoke; /* Replaced #f9f9f9 */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Responsive Grid for Event Cards */
+.events-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.event-card {
+  background: White; /* Kept human-readable name */
+  border: 1px solid LightGray; /* Replaced #ddd */
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Forms */
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 400px;
+  background: White; /* Kept human-readable name */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.App-link {
-  color: #61dafb;
+input, select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid Silver; /* Replaced #ccc */
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  padding: 10px 15px;
+  background-color: DodgerBlue; /* Replaced #007bff (a very vibrant, clean modern blue) */
+  color: White; /* Kept human-readable name */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: RoyalBlue; /* Replaced #0056b3 (a perfect darker blue match for hover states) */
 }
