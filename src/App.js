@@ -5,6 +5,9 @@ import Home from "./pages/Home"
 import Register from "./pages/Register"
 import Event from "./pages/Events"
 import MyEvents from "./pages/MyEvents"
+import EventDetails from "./pages/EventDetails"
+import ProtectedRoute from "./components/ProtectedRoute"
+import "./App.css"
 
 
 function App(){
@@ -17,8 +20,14 @@ function App(){
         <Router path="/login" element={<Login/>}/>
         <Router path="/register" element={<Register/>}/>
         <Router path="/events" element={<Events/>}/>
-        <Router path="/my-events" element={<MyEvents/>}/>
         <Route path="/events/:id" element={<EventDetails />} />
+        // Protect My Events route 
+          <Route path="/my-events" element={
+              <ProtectedRoute>
+                <MyEvents />
+              </ProtectedRoute>
+            } 
+          />
       </Routes>
     </div>
     </BrowserRouter>
