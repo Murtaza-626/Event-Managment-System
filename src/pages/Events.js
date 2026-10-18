@@ -18,8 +18,8 @@ function Events() {
     const fetchEvents = async () => {
       dispatch(setLoading(true));
       
-      const apiKey = process.env.REACT_APP_TICKETMASTER_API_KEY;
-    // const apiKey = "lZkfSItr1JSOLkqFjbZmAwybIlXhyl6l"
+    //   const apiKey = process.env.REACT_APP_TICKETMASTER_API_KEY;
+    const apiKey = "lZkfSItr1JSOLkqFjbZmAwybIlXhyl6l"
       // Building API URL with filters
       let url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${apiKey}`;
       if (keyword) url += `&keyword=${keyword}`;
@@ -78,7 +78,7 @@ function Events() {
           {events.length > 0 ? (
             events.map((event) => (
               <div key={event.id} style={{ border: "1px solid lightblue", padding: "10px", width: "250px" }}>
-                // Fallback image if available 
+                {/* Fallback image if available */} 
                 {event.images && <img src={event.images[0].url} alt={event.name} style={{ width: "100%", height: "150px", objectFit: "cover" }} />}
                 <h3>{event.name}</h3>
                 <p><strong>Date:</strong> {event.dates?.start?.localDate}</p>
