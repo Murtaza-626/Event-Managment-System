@@ -13,7 +13,6 @@ A simple React app to browse events from the Ticketmaster API, register for them
 React, Redux Toolkit, React Router, Ticketmaster API
 
 ## Requirements
-- Node.js (v18 or later)
 - A free API key from [developer.ticketmaster.com](https://developer.ticketmaster.com/)
 
 ## Setup
